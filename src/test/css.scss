@@ -1,0 +1,67 @@
+.galerie-glass {
+    --gap: 15px;
+    --widthMax: 1fr;
+    --widthMin: 170px;
+    --height: 240px;
+
+    @media only screen and (max-width: 600px) {
+        --gap: 15px;
+        --widthMax: 1fr;
+        --widthMin: 95px;
+        --height: 150px;
+    }
+
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fill, minmax(var(--widthMin), var(--widthMax)));
+
+    img {
+        @apply w-full rounded-md object-cover object-center h-[var(--height)];
+        box-shadow: 0 6px 6px 6px rgba(white, 0.4);
+    }
+
+    .nazev {
+        position: relative;
+        overflow: hidden;
+        width: var(--widthMin);
+        margin-top: .5rem;
+    }
+
+    &__overlay {
+        position: relative;
+
+        & > picture {
+            display: flex;
+            justify-content: center;
+        }
+
+        &:hover &-prvky {
+            display: flex;
+        }
+
+        &-prvky {
+            @apply hidden;
+            @media (hover: none) {
+                @apply flex
+            }
+
+            .list-block {
+                display: none;
+            }
+
+            .list-hlavni:hover .list-block, .list-hlavni:focus-within .list-block, .list-hlavni:focus .list-block {
+                display: flex;
+            }
+        }
+
+        .ovladani-ico {
+            @apply flex items-center justify-center bg-black dark:bg-white text-white dark:text-black w-[20px] h-[20px] sm:w-6 sm:h-6 m-1 rounded-md;
+            & > i {
+                @apply text-xs;
+            }
+        }
+    }
+}

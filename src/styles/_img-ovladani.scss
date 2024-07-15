@@ -1,0 +1,30 @@
+.img-ovladani {
+    position: relative;
+
+    &-prvky {
+        position: absolute;
+        display: none;
+        cursor: pointer;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+    }
+
+    .ovladani-ico {
+        background-color: white;
+        color: black;
+        padding: .5rem;
+        margin: .125rem;
+        border-radius: 8px;
+    }
+
+
+    &:hover .img-ovladani-prvky {
+        display: flex;
+    }
+}

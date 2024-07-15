@@ -1,0 +1,15 @@
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    @apply dark:text-white text-black;
+
+    &:focus-visible, &:focus, &:focus-within {
+        outline: none;
+    }
+}

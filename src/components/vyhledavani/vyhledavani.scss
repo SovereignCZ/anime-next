@@ -1,0 +1,35 @@
+.vyhledavani-overlay {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    overflow: hidden;
+    //align-items: ;
+
+
+    .vyhledavani-content {
+        @apply w-full sm:w-5/6 md:w-5/6 2xl:w-5/6;
+        position: relative;
+    }
+
+    .vyhledavani-vysledky {
+        @apply max-h-full;
+        overflow: auto;
+    }
+
+    .vyhledavani-search {
+        //margin-top: 10rem;
+    }
+
+    input {
+        height: 4rem;
+        font-size: 17pt;
+    }
+}

@@ -1,0 +1,7 @@
+.table {
+    @apply w-full;
+
+    thead > * {
+        @apply text-left;
+    }
+}

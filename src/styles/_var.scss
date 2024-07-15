@@ -1,0 +1,53 @@
+$body-bg: #1E1E40 !default;
+$text-color: #D4D4D4 !default;
+//$body-bg: #edf1f5 !default;
+//$text-color: #1E1E40 !default;
+
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-weight-normal: 500;
+$font-size-root: 15px;
+
+$min-contrast-ratio: 4.5 !default;
+
+//výška headeru. Musí být minumálně 50px kvůli fotce
+$vyska-menu: 4rem;
+
+$margin-top-header: 1.5rem;
+$margin-left-header: 1rem;
+$margin-right-header: 1rem;
+$margin-bottom-header: 1.5rem;
+
+$offcanvas-vertical-height: 100vh;
+
+//margin-bottom-header je tam 2x, protože jednou je to header a podruhé jako oddělení od bottom
+$velikost-menu: $margin-top-header+($margin-bottom-header*2)+$vyska-menu;
+
+//$spacer: .5rem;
+
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1200px,
+//        xxl: 1400px,
+//        xxxl: 1800px
+//);
+
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1140px,
+//        xxl: 1420px,
+//        xxxl: 1720px
+//);
+
+$font-size-base: 0.9rem !default;
+
+$primary: #4a90e2;
+$secondary: #6772e5;
+$success: #2ecc71;
+$info: #55acee;
+$warning: #f1c40f;
+$danger: #e74c3c;

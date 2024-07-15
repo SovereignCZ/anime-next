@@ -1,0 +1,12 @@
+.toast-container {
+    @apply z-20 w-max max-w-full top-20 start-1/2 -translate-x-1/2 fixed;
+}
+
+.toast {
+    //bg-body-500
+    @apply border border-cyan-500 shadow rounded-md w-[400px] mb-2 bg-green-300 text-black;
+}
+
+.toast-body {
+    @apply ps-5 p-4 break-words;
+}

@@ -1,0 +1,15 @@
+.card {
+    @apply w-full min-h-10 h-fit;
+
+    & > .card-header {
+        @apply font-bold p-2.5 py-2 bg-transparent;
+    }
+
+    & > .card-body {
+        @apply rounded-lg p-2.5 dark:bg-[#000] bg-[#fff] bg-opacity-10 dark:bg-opacity-30;
+        &:before {
+            content: "";
+            @apply backdrop-blur;
+        }
+    }
+}

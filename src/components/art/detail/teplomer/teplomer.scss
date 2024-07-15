@@ -1,0 +1,17 @@
+.teplomer {
+    .nadpis, .pocty {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+
+    .grafika {
+        display: flex;
+        border-radius: .25rem;
+        overflow: auto;
+
+        .rtut {
+            height: 1rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .obal-img {
+        width: 105px;
+        height: 150px;
+        margin: .25rem;
+        text-align: center;
+
+        & > img {
+            height: 150px;
+        }
+    }
+}

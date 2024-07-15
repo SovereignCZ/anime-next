@@ -1,0 +1,14 @@
+.react-flow {
+    &__nodes {
+
+    }
+
+    &__node {
+        font-size: 7pt;
+        @apply rounded-2xl border border-amber-300 w-52 min-h-10 p-2 flex justify-center items-center;
+    }
+
+    &__edge-text {
+        font-size: 6pt;
+    }
+}

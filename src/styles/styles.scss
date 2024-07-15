@@ -1,0 +1,119 @@
+@import 'var';
+
+@tailwind base;
+@tailwind components;
+
+:root {
+    color-scheme: dark;
+}
+
+@layer base {
+    html {
+
+        overflow-y: scroll !important;
+        padding: 0 !important;
+
+        --body-bg: #{$body-bg};
+        --text-color: #{$text-color};
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(13, 104, 240, 0.5);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(101, 104, 154, 0.75);
+        }
+    }
+
+    body {
+        //background: rgb(3, 7, 18) url("/image/0.png") no-repeat fixed;
+        //background-size: cover;
+        color: $text-color;
+        font-size: .85rem;
+
+        &:before {
+            top: 0;
+            right: 0;
+            width: 100vw;
+            bottom: 0;
+            content: "";
+            display: block;
+            position: fixed;
+            background: $body-bg;
+            background: rgb(3, 7, 18) radial-gradient(circle at center, rgba(101, 104, 154, 0.75) 0%, rgba(101, 104, 154, 0) 45.81%);
+            max-height: 100vh;
+            transform-origin: top right;
+            z-index: -10;
+        }
+    }
+
+
+    a {
+        //text-info-800
+        @apply font-bold text-blue-400 hover:text-blue-300;
+        text-decoration: none;
+    }
+
+    pre {
+        white-space: pre-wrap; /* CSS3 browsers  */
+        word-wrap: break-word; /* IE 5.5+ and up */
+    }
+
+    .header {
+        margin: 1rem;
+        border-radius: 8px;
+        transition: margin 250ms, border-radius 250ms;
+        filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, .45)) drop-shadow(0px 0px 3px rgba(255, 255, 255, .55)) drop-shadow(0px 0px 6px rgba(13, 104, 240, 0.5));
+
+        .nav-link {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        &.scrolled {
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+
+    .profil-ico {
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.45)) drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.55)) drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.25));
+
+        & > img {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            background-color: white;
+        }
+    }
+
+    /* TODO tohoto se zbavit, až se zbavím bootstrapu */
+    p {
+        margin: 0;
+    }
+}
+
+@import "navbar";
+@import "card";
+@import "form-control";
+@import "toast";
+@import "button";
+@import "table";
+@import "header";
+@import 'list';
+@import 'media';
+@import "img-glass";
+@import 'img-shadow';
+@import 'img-ovladani';
+@import "page-loader";
+
+.btn {
+    color: white;
+}
+
+@tailwind utilities;

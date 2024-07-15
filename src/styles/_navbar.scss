@@ -1,0 +1,13 @@
+.navbar {
+    &-obal {
+        @apply flex justify-center mb-4 border-b border-gray-200 dark:border-gray-700;
+    }
+
+    &-tabs {
+        @apply flex flex-wrap -mb-px text-sm font-medium text-center;
+    }
+
+    &-tab {
+        @apply inline-block p-3 hover:border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300;
+    }
+}
