@@ -32,7 +32,7 @@ node {
                 // Zastaví a odstraní předchozí kontejner, pokud existuje
                 sh 'docker rm -f anime-next || true'
                 // Spustí nový kontejner
-                sh 'docker run -d --name anime-next -p 3000:3000 anime-next --restart unless-stopped'
+                sh 'docker run -d --name anime-next -p 3000:3000 --restart unless-stopped'
             }
         }
 
