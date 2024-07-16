@@ -32,7 +32,7 @@ node {
                 // Zastaví a odstraní předchozí kontejner, pokud existuje
                 sh 'docker rm -f anime-next || true'
                 // Spustí nový kontejner
-                sh 'docker run -d --name anime-next -l com.sove.projekt=anime -l com.sove.jazyk=next --restart unless-stopped anime-next'
+                sh 'docker run -d --name anime-next -l com.sove.projekt=anime -l com.sove.jazyk=next --network proxyNet --restart unless-stopped anime-next'
             }
         }
 
