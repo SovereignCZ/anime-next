@@ -1,7 +1,6 @@
 import "#/styles/styles.scss"
 
 export const metadata = {
-    base: 'https://192.168.50.167/anime',
     title: {
         template: '%s | Anime Oasis',
         default: 'Anime Oasis', // a default is required when creating a template
