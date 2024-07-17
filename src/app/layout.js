@@ -15,6 +15,7 @@ export default function RootLayout({children}) {
         <head>
             <meta charSet="UTF-8"/>
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+            <base href="https://192.168.50.167/anime" target="_blank"/>
             <link href="/image/favicon.ico" rel="icon"/>
             <link href="/image/ios/192.png" rel="apple-touch-icon"/>
             <link crossOrigin="use-credentials" href="/manifest.json" rel="manifest"/>
