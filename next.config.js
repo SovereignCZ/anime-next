@@ -9,6 +9,6 @@ module.exports = {
             },
         ],
     },
-    // basePath: '/anime',
+    basePath: '/anime',
     assetPrefix: "https://192.168.50.167/anime",
 };
