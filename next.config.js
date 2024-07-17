@@ -4,9 +4,8 @@ module.exports = {
     images: {
         remotePatterns: [
             {
-                protocol: process.env.NEXT_PUBLIC_SERVER_PROTOCOL,
                 hostname: process.env.NEXT_PUBLIC_SERVER_DOMAIN,
-                port: '',
+                pathname: '/anime/data/**'
             },
         ],
     },
