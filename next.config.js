@@ -5,10 +5,8 @@ module.exports = {
         remotePatterns: [
             {
                 hostname: process.env.NEXT_PUBLIC_SERVER_DOMAIN,
-                pathname: '/anime/data/**'
+                pathname: '/data/**'
             },
         ],
-    },
-    basePath: '/anime',
-    assetPrefix: "https://192.168.50.167/anime",
+    }
 };
