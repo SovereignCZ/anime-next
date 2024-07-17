@@ -7,6 +7,8 @@ WORKDIR /app
 # Zkopíruj package.json a pnpm-lock.yaml do pracovního adresáře
 COPY package.json pnpm-lock.yaml server.js ./
 
+# na produkci nesmí být, ale u mě?
+RUN npm config set strict-ssl=false
 # Nainstaluj závislosti
 RUN npm install -g pnpm && pnpm install
 
