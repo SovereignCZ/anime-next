@@ -11,5 +11,5 @@ module.exports = {
         ],
     },
     basePath: '/anime',
-    assetPrefix: "/anime/",
+    assetPrefix: "https://sovereign.pilsfree.cz/anime/",
 };
