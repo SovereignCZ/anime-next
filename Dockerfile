@@ -5,7 +5,7 @@ FROM node:22-alpine
 WORKDIR /app
 
 # Zkopíruj package.json a pnpm-lock.yaml do pracovního adresáře
-COPY package.json server.js ./
+COPY /public package.json server.js ./
 
 # na produkci nesmí být, ale u mě?
 RUN npm config set strict-ssl=false
