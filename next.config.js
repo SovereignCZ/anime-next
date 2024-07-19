@@ -10,5 +10,6 @@ module.exports = {
                 pathname: '**'
             },
         ],
+        domains: ['192.168.50.167'],
     }
 };
