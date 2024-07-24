@@ -12,7 +12,7 @@ node {
         }
         stage('Install Dependencies') {
             // Spustí pnpm install
-            sh 'pnpm install'
+            sh 'pnpm install --frozen-lockfile'
         }
 
         stage('Build') {

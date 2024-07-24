@@ -9,6 +9,10 @@ module.exports = {
             },
             {
                 protocol: 'http',
+                hostname: '192.168.50.37',
+            },
+            {
+                protocol: 'http',
                 hostname: 'localhost',
             },
         ]
