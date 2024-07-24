@@ -6,10 +6,11 @@ module.exports = {
             {
                 protocol: 'http',
                 hostname: '192.168.50.167',
-                port: '**',
-                pathname: '**'
             },
-        ],
-        domains: ['192.168.50.167'],
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+            },
+        ]
     }
 };
