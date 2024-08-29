@@ -16,6 +16,11 @@ module.exports = {
                 hostname: 'localhost',
                 port: '8080'
             },
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+                port: '10443'
+            },
         ]
     }
 };
