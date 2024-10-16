@@ -22,5 +22,13 @@ module.exports = {
                 port: '10443'
             },
         ]
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler', // or "modern"
+                silenceDeprecations: ['mixed-decls'],
+            }
+        }
     }
 };

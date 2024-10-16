@@ -11,12 +11,14 @@
         --height: 150px;
     }
 
-    display: grid;
-    justify-content: space-evenly;
-    justify-items: center;
+    & {
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
 
-    grid-gap: var(--gap);
-    grid-template-columns: repeat(auto-fill, minmax(var(--widthMin), var(--widthMax)));
+        grid-gap: var(--gap);
+        grid-template-columns: repeat(auto-fill, minmax(var(--widthMin), var(--widthMax)));
+    }
 
     img {
         @apply w-full rounded-md object-cover object-center h-[var(--height)];

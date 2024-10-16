@@ -9,9 +9,7 @@ COPY /public ./public
 COPY package.json next.config.js server.js ./
 
 # na produkci nesmí být, ale u mě?
-RUN npm config set strict-ssl=false
-# Nainstaluj závislosti
-RUN npm install -g pnpm && pnpm install
+RUN npm config set strict-ssl=false && npm install -g pnpm && pnpm install
 
 # Zkopíruj zbytek aplikace do pracovního adresáře
 COPY .next .next
